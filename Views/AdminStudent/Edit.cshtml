@@ -1,0 +1,34 @@
+﻿@model StudentInfo.Models.ViewModel.EditStudentRequest
+@{
+}
+    <div class="container bg-light">
+        <div class="row d-flex flex-column">
+            <div class="col">
+                <h3>Edit Student</h3>
+            </div>
+            <div class="col">
+                <form method="post">
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="name" asp-for="Id" readonly />
+                </div>
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" asp-for="Name" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Department" class="form-label">Department</label>
+                        <input type="text" class="form-control" id="department" asp-for="Department" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Session" class="form-label">Session</label>
+                        <input type="text" class="form-control" id="session" asp-for="Session" />
+                    </div>
+
+                    <button type="submit" class="btn btn-dark">Edit</button>
+                    <button type="submit" class="btn btn-dark" asp-controller="AdminStudent" asp-action="Delet">Delet</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
